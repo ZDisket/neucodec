@@ -10,16 +10,11 @@ packages = [{ include = "neucodec" }]
 [tool.poetry.dependencies]
 python = "^3.10"
 
-# Your provided runtime dependencies
-numpy = ">=2.0.2"
+# Runtime dependencies (decoder-only)
 
-torch = ">=2.5.1"
-torchaudio = ">=2.5.1"
-torchao = ">=0.12.0"
 torchtune = ">=0.3.1"
 vector-quantize-pytorch = "==1.17.8"
-transformers = ">=4.44.2"
-local_attention = ">=1.11.1"
+einops = ">=0.8.0"
 
 # Optional: specify dev dependencies
 [tool.poetry.group.dev.dependencies]
