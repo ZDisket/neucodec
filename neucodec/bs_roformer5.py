@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 from einops import rearrange
-from torchtune.modules import RotaryPositionalEmbeddings
+from .rope import RotaryPositionalEmbeddings
 
 
 class RMSNorm(torch.nn.Module):
